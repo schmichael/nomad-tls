@@ -1,0 +1,17 @@
+{
+  "datacenter": "dc1",
+  "data_dir": "/tmp/consul-tls-server",
+  "log_level": "DEBUG",
+  "node_name": "consul-tls-server",
+  "server": true,
+  "bootstrap": true,
+  "addresses": {
+    "https": "0.0.0.0"
+  },
+  "ports": {
+    "https": 8501
+  },
+  "key_file": "consul-key.pem",
+  "cert_file": "consul.pem",
+  "ca_file": "../ca/ca.pem"
+}

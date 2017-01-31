@@ -1,0 +1,23 @@
+{
+  "datacenter": "dc1",
+  "data_dir": "/tmp/consul-tls-client",
+  "log_level": "DEBUG",
+  "node_name": "consul-tls-client",
+  "server": false,
+  "addresses": {
+    "https": "0.0.0.0"
+  },
+  "retry_join": ["127.0.0.1:8301"],
+  "ports": {
+    "dns":   9600,
+    "http":  9500,
+    "https": 9501,
+    "rpc":   9400,
+    "server": 9300,
+    "serf_lan": 9301,
+    "serf_wan": 9302
+  },
+  "key_file": "consul-key.pem",
+  "cert_file": "consul.pem",
+  "ca_file": "../ca/ca.pem"
+}

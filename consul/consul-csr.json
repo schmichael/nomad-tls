@@ -1,0 +1,8 @@
+{
+  "CN": "global.consul",
+  "hosts": [
+    "server.global.consul",
+    "client.global.consul",
+    "localhost"
+  ]
+}
